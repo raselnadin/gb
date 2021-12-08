@@ -98,6 +98,7 @@ module.exports = {
             if (!('autolevelup' in user)) user.autolevelup = true
             if (!('ah' in user)) user.ah = []
             if (!('mission' in user)) user.mission = {}
+            if (!('pasangan' in user)) user.pasangan = ''
         } else global.DATABASE._data.users[m.sender] = {
             healt: 100,
             level: 0,
@@ -159,6 +160,7 @@ module.exports = {
             autolevelup: true,
             ah: [],
             mission: {},
+            pasangan: '',
         }
 
         let chat = global.DATABASE._data.chats[m.chat]
